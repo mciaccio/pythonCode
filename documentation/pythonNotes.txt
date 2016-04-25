@@ -1,0 +1,49 @@
+
+***
+*** python notes
+*** 24 April 2016
+***
+***
+# IDLE
+/Applications/Python 3.5/IDLE.app
+#
+
+#
+$ python3
+Python 3.5.1 (v3.5.1:37a07cee5969, Dec  5 2015, 21:12:44) 
+[GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> ^D
+
+#
+Michaels-MacBook-Pro-2:~ MenfiSystems$ python
+Python 2.7.10 (default, Oct 23 2015, 19:19:21) 
+[GCC 4.2.1 Compatible Apple LLVM 7.0.0 (clang-700.0.59.5)] on darwin 
+
+#
+Michaels-MacBook-Pro-2:~ MenfiSystems$ which python
+/usr/bin/python
+
+#
+Michaels-MacBook-Pro-2:~ MenfiSystems$ /usr/bin/python
+Python 2.7.10 (default, Oct 23 2015, 19:19:21) 
+[GCC 4.2.1 Compatible Apple LLVM 7.0.0 (clang-700.0.59.5)] on darwin
+
+#
+Michaels-MacBook-Pro-2:udacityPythonCode2016 MenfiSystems$ python --version
+Python 2.7.10
+
+#
+Michaels-MacBook-Pro-2:udacityPythonCode2016 MenfiSystems$ python -V
+Python 2.7.10
+
+#
+Michaels-MacBook-Pro-2:udacityPythonCode2016 MenfiSystems$ python3 --version
+Python 3.5.1
+
+#
+Michaels-MacBook-Pro-2:udacityPythonCode2016 MenfiSystems$ python3 -V
+Python 3.5.1
+
+
+ 
