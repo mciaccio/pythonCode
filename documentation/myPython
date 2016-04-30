@@ -1,0 +1,41 @@
+
+
+
+The Python Standard Library
+https://docs.python.org/3/library/
+
+
+#
+# Python Standard Library
+#   file (module) name webbrowser   - function - def open
+#   file (module) name time         - function - def ctime ; def sleep
+#
+
+
+# works
+#import os
+#os.listdir("foo")
+
+# works
+# from os import listdir
+# listdir("foo")
+
+
+print(file_list)
+
+# implicit string conversion 
+print ("\nBefore open Webbrowser" + time.ctime())
+
+print ("\n\tfile_list is -> %s" % file_list)
+
+print('file_list is -> {}'.format(file_list))
+print('count is -> {}'.format(count))
+ 
+
+for file in file_list:
+	pass
+
+
+# strip the digits out of the string file which is a file name abc99 for example 
+numbersGone = ''.join(i for i in file if not i.isdigit())
+
