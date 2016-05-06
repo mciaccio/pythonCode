@@ -5,6 +5,10 @@
 #import sys
 
 import twilio
+# github has the twilio code
+# twilio is a folder, rest is a folder inside the twilio folder
+# inside the rest folder is a __init__.py file
+# TwilioRestClient is a class in the __init__.py file
 from twilio.rest import TwilioRestClient
 
 print("\nBegin\n")
