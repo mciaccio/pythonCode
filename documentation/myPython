@@ -11,6 +11,7 @@ https://docs.python.org/3/library/
 #   file (module) name time         - function - def ctime ; def sleep
 #
 
+some_module.py - naming example 
 
 # works
 #import os
@@ -38,4 +39,69 @@ for file in file_list:
 
 # strip the digits out of the string file which is a file name abc99 for example 
 numbersGone = ''.join(i for i in file if not i.isdigit())
+
+PyDev is the best IDE to develop in Python. Has this feature and a lot of more.
+
+# print ("x class name is\t= %s\n" % x.__class__.__name__)
+# x class name is	= NoneType
+
+# function definition 
+def draw_square():
+    print ("\tBegin draw_square function\n")
+    print ("\tEnd draw_square function\n")
+
+#function call 
+draw_square()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    # opens a window
+    window = turtle.Screen()
+    window.bgcolor("red")
+
+    # get / echo the background color - note could not find getter method
+    # call bgcolor with no arguments
+    # print(window.bgcolor())
+    print ("\twindow.bgcolor() is %s" % window.bgcolor())
+
+    # get the class of the window object
+    print ("\twindow.__class__ is %s" % window.__class__)
+    # window.__class__ is <class 'turtle._Screen'>
+
+    # get the class name of the window object
+    print ("\twindow.__class__.__name__ is %s\n" % window.__class__.__name__)
+    # window.__class__.__name__ is _Screen
+    
+    # get the class methods 
+    # print ("\tdir (window.__class__) is -> %s\n" % dir (window.__class__))
+ 
+    # dir (window.__class__) is -> ['_RUNNING', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', ....
+ 
+    # get the methods of the class
+    # print(dir(turtle))
+    # ['Canvas', 'Pen', 'RawPen', 'RawTurtle', 'Screen', 'ScrolledCanvas', 'Shape', 'TK', 'TNavigator', 'TPen', 'Tbuffer', 'Terminator', 'Turtle', ....
+
+
+
+
+
 
