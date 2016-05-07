@@ -1,9 +1,58 @@
 
 
+***
+*** python notes
+*** 24 April 2016
+***
+
+# IDLE
+/Applications/Python 3.5/IDLE.app
+#
+
+#
+$ python3
+Python 3.5.1 (v3.5.1:37a07cee5969, Dec  5 2015, 21:12:44) 
+[GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> ^D
+
+#
+Michaels-MacBook-Pro-2:~ MenfiSystems$ python
+Python 2.7.10 (default, Oct 23 2015, 19:19:21) 
+[GCC 4.2.1 Compatible Apple LLVM 7.0.0 (clang-700.0.59.5)] on darwin 
+
+#
+Michaels-MacBook-Pro-2:~ MenfiSystems$ which python
+/usr/bin/python
+
+#
+Michaels-MacBook-Pro-2:~ MenfiSystems$ /usr/bin/python
+Python 2.7.10 (default, Oct 23 2015, 19:19:21) 
+[GCC 4.2.1 Compatible Apple LLVM 7.0.0 (clang-700.0.59.5)] on darwin
+
+#
+Michaels-MacBook-Pro-2:udacityPythonCode2016 MenfiSystems$ python --version
+Python 2.7.10
+
+#
+Michaels-MacBook-Pro-2:udacityPythonCode2016 MenfiSystems$ python -V
+Python 2.7.10
+
+#
+Michaels-MacBook-Pro-2:udacityPythonCode2016 MenfiSystems$ python3 --version
+Python 3.5.1
+
+#
+Michaels-MacBook-Pro-2:udacityPythonCode2016 MenfiSystems$ python3 -V
+Python 3.5.1
+
+***
+***
+*** 
+
 
 The Python Standard Library
 https://docs.python.org/3/library/
-
 
 #
 # Python Standard Library
@@ -32,7 +81,7 @@ print ("\n\tfile_list is -> %s" % file_list)
 print('file_list is -> {}'.format(file_list))
 print('count is -> {}'.format(count))
  
-
+# no op
 for file in file_list:
 	pass
 
@@ -52,27 +101,6 @@ def draw_square():
 
 #function call 
 draw_square()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     # opens a window
     window = turtle.Screen()
@@ -99,6 +127,88 @@ draw_square()
     # get the methods of the class
     # print(dir(turtle))
     # ['Canvas', 'Pen', 'RawPen', 'RawTurtle', 'Screen', 'ScrolledCanvas', 'Shape', 'TK', 'TNavigator', 'TPen', 'Tbuffer', 'Terminator', 'Turtle', ....
+
+
+***
+*** Twilio
+***
+
+Twilio - External Python package, not part of the Python Standard Library 
+
+I understand this code is the only way to recover access to my account if I lose my phone.
+WjFpwNUHeOZfioVigvWmO9/FqAXszOBvYeSSoKOa
+
+sudo easy_install twilio
+Password:
+Searching for twilio
+Best match: twilio 6.3.dev0
+Processing twilio-6.3.dev0-py2.7.egg
+twilio 6.3.dev0 is already the active version in easy-install.pth
+
+Using /Library/Python/2.7/site-packages/twilio-6.3.dev0-py2.7.egg
+Processing dependencies for twilio
+Finished processing dependencies for twilio
+
+
+MenfiSystems ~ $ sudo -H pip install --upgrade pip
+Requirement already up-to-date: pip in /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages
+
+MenfiSystems ~ $ sudo -H pip install --upgrade twilio
+Requirement already up-to-date: twilio in /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages
+Requirement already up-to-date: httplib2>=0.7 in /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages (from twilio)
+Requirement already up-to-date: six in /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages (from twilio)
+Requirement already up-to-date: pytz in /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages (from twilio)
+Requirement already up-to-date: pysocks in /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages (from twilio)
+
+***
+***
+***
+
+AccountSID
+Used to exercise the REST API
+AC28c3cf8ede2e7907f73ee038226d629e
+
+AuthToken
+Keep this somewhere safe and secure
+7b136e922b8514618e546e0986da2f66
+
+Test AccountSID
+Used to exercise the REST API
+AC636af3753d1baeebd3ed4ab4f56386d0
+
+Test AuthToken
+Keep this somewhere safe and secure
+6c4ae07cdcca470866b9dc05843b2b90
+
+***
+***
+***
+# built ins - handy builtins built ins 
+https://docs.python.org/3/library/functions.html
+print built in globals
+print('\tglobals() is -> {}\n'.format(globals()))
+
+print built in locals
+print('\tlocals() is -> {}\n'.format(locals())) 
+
+
+***
+*** urllib.parse.quote
+*** normalize or fix a broken url
+*** see url_clean.py for greater detail
+***
+
+# normalized "broken" url
+# fixed the space note the %20 also left the back slashes alone - safe argument 
+
+my_quoted_fixed_url = urllib.parse.quote("http://www.purgomalum.com/service/contains profanity?text=shot", safe="%/:=&?~#+!$,;'@()*[]")
+
+print("my_quoted_fixed_url is %s" % my_quoted_fixed_url)
+# my_quoted_fixed_url is http://www.purgomalum.com/service/contains%20profanity?text=shot
+
+***
+***
+***
 
 
 
