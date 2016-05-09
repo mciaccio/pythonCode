@@ -201,13 +201,37 @@ print('\tlocals() is -> {}\n'.format(locals()))
 # normalized "broken" url
 # fixed the space note the %20 also left the back slashes alone - safe argument 
 
-my_quoted_fixed_url = urllib.parse.quote("http://www.purgomalum.com/service/contains profanity?text=shot", safe="%/:=&?~#+!$,;'@()*[]")
+my_quoted_fixed_url = urllib.parse.quote("http://www.purgomalum.com/service/contains profanity?text=shot", safe="%/:=&?~#+!$,;'@()*[]") - WORKS!! 
 
 print("my_quoted_fixed_url is %s" % my_quoted_fixed_url)
 # my_quoted_fixed_url is http://www.purgomalum.com/service/contains%20profanity?text=shot
 
+print('\ttext_toCheck is -> {}\n'.format(text_to_check))
+fixed_text_to_check = urllib.parse.quote(text_to_check, safe="%/:=&?~#+!$,;'@()*[]") - WORKS!!
+print('\tfixed_text_to_check is -> {}\n'.format(fixed_text_to_check))
+
 ***
 ***
+***
+
+# Working profanity checking web site
+http://www.wdylike.appspot.com/?q=shot
+
+check_profanity08May2016.py - latest!!  
+
+
+***
+***
+***
+
+import urllib.request - working import 
+
+# From the documentation 
+urllib is a package (PACKAGE) that collects several modules (MODULES) for working with URLsb.request for opening and reading URLs
+urllib.request for opening and reading URLs - One of the modules 
+
+***
+*** __init__ - constructor 
 ***
 
 
