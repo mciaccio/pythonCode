@@ -235,6 +235,89 @@ urllib.request for opening and reading URLs - One of the modules
 ***
 
 
+***
+*** Misc
+***
+
+# Populate an array 
+movies = [avatar, toy_story]
+
+print("Number of toys - " + str(self.number_of_toys)) - string conversion print function
+
+***
+*** Style Guide 
+***
+
+https://google.github.io/styleguide/pyguide.html
+Google Python Style Guide
+
+# Constant - All CAPS 
+VALID_RATINGS = ["G", "PG", "PG-13", "R"]
+
+# unix file - Class inside 
+media.py - lowercase - file contains Movie class 
+import media
+
+# class class definition - Cap - "M"
+class Movie():
+
+
+***
+*** Classes     
+***
+
+http://www2.lib.uchicago.edu/keith/courses/python/class/5/
+
+# Predefined class variables 
+# Also run dir on a test empty class instance  
+
+Attribute	Type			Read/Write	Description
+__dict__	dictionary		R/W		The class name space.
+__name__	string			R/O		The name of the class.
+__bases__	tuple of classes	R/O		The classes from which this class inherits.
+__doc__		string OR None		R/W		The class documentation string.
+__module__	string			R/W		The name of the module in which this class was defined.
+
+# Access the free text documentation in the Python class
+# unix file - media.py
+# class in media.py - Movie 
+# class documentation __doc__ - pre defined class variable
+class Movie():
+    """ Move class documentation """ - free text comments in media.py file - class definition
+# Access the pre defined class variable - not instance variable 
+print('\tclass variable media.Movie.__doc__ is -> {}\n'.format(media.Movie.__doc__))
+class variable media.Movie.__doc__ is ->  Move class documentation 
+
+#
+print('\tclass variable media.Movie.__name__ is -> {}\n'.format(media.Movie.__name__))
+class variable media.Movie.__name__ is -> Movie
+class Movie():
+
+# Access - identify the file, unix file, that contains the Python class
+print('\tclass variable media.Movie.__module__ is -> {}\n'.format(media.Movie.__module__)) - __module__
+class variable media.Movie.__module__ is -> media 
+-rw-r--r--  1 MenfiSystems  staff   730 May  9 14:25 media.py
+
+# Access - identify - Parent classes inherited from 
+print('\tclass variable media.Movie.__bases__ is -> {}\n'.format(media.Movie.__bases__))
+class variable media.Movie.__bases__ is -> (<class 'object'>,)
+
+# OK Access class variable in an instance  
+print('\tclass variable toy_story.VALID_RATINGS are -> {}'.format(toy_story.VALID_RATINGS))
+
+# BEST - Access class variable - note class name NOT instance name  
+print('\tclass variable media.Movie.VALID_RATINGS are -> {}\n'.format(media.Movie.VALID_RATINGS))
+
+
+# GenericClassInstance builtins built-ins 
+dir(myGenericClassInstance) is -> [
+'__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', 
+'__gt__', '__hash__', '__init__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', 
+'__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__']
+
+
+
+
 
 
 
